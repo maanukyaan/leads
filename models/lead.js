@@ -2,6 +2,14 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const leadSchema = new Schema({
+  leadID: {
+    type: Number,
+    required: true,
+  },
+  landing: {
+    type: String,
+    required: true,
+  },
   firstName: {
     type: String,
     required: true,
@@ -15,6 +23,14 @@ const leadSchema = new Schema({
     required: true,
   },
   telephone: {
+    type: String,
+    required: true,
+  },
+  ip: {
+    type: String,
+    required: true,
+  },
+  userAgent: {
     type: String,
     required: true,
   },
